@@ -30,7 +30,7 @@
   background-color: var(--bg-color);
   border: 2px solid var(--text-color);
   margin: 100px auto;
-  font-family: var(--PressStart2P);
+  font-family: var(--PressStart2P), fantasy;
   text-transform: uppercase;
   max-height: 368px;
 }
@@ -39,13 +39,14 @@
   width: var(--item-width);
 }
 
-.header__title {
+.header__logo {
+  display: block;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-align: center;
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
 }
 
-.header__text {
+.header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-align: center;
   padding: 20px 0 23px;
@@ -138,12 +139,13 @@
   position: absolute;
   top: clamp(1.438rem, 1.394rem + 0.1878vw, 1.563rem);
   right: clamp(0.688rem, 0.3799rem + 1.3146vw, 1.563rem);
-  font-family: var(--PressStart2P), sans-serif;
+  font-family: var(--PressStart2P), fantasy;
   font-size: 14px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
   text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color),
     1px 0 var(--bg-color), 0 -1px var(--bg-color);
+  z-index: 2;
 }
 
 @supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
@@ -189,7 +191,7 @@
 }
 
 .button__text {
-  font-family: var(--PressStart2P);
+  font-family: var(--PressStart2P), fantasy;
   line-height: 90%;
   font-size: 14px;
   color: var(--text-color);
@@ -285,16 +287,16 @@
 
 .saving-container {
   color: var(--text-color);
-  font-family: var(--PressStart2P);
+  font-family: var(--PressStart2P), fantasy;
   margin: 30px auto;
 }
 
-.saving[open] .saving-container{
+.saving[open] .saving-container {
   display: flex;
   gap: 20px;
   align-items: center;
   color: var(--text-color);
-  font-family: var(--PressStart2P);
+  font-family: var(--PressStart2P), fantasy;
   margin: 30px 30px 30px 0;
 }
 
@@ -380,7 +382,7 @@
     height: 199px;
   }
 
-  .saving[open] .saving-container{
+  .saving[open] .saving-container {
     margin: 30px 30px 30px 30px;
   }
 
